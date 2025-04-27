@@ -7,23 +7,23 @@
     <h1>Días restantes hasta el 31 de Diciembre de 2024:</h1>
     <p id="countdown"></p>
 
+
     <script>
         function calculateDaysLeft() {
-            // Fecha objetivo: 31 de diciembre de 2024
+            // fines de year juju 
             const targetDate = new Date('2024-12-31');
             const today = new Date();
             
-            // Calcula la diferencia en milisegundos
+            //diferenciamilkisegund?
             const difference = targetDate - today;
             
-            // Convierte la diferencia a días
+            // a dias 
             const daysLeft = Math.ceil(difference / (1000 * 60 * 60 * 24));
             
-            // Muestra el resultado en el elemento con id 'countdown'
+            //imprime el resultado con countdown
             document.getElementById('countdown').innerText = daysLeft + " días";
         }
 
-        // Llama a la función para calcular los días restantes
         calculateDaysLeft();
     </script>
 </body>
